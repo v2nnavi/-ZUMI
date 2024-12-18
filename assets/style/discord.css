@@ -1,0 +1,585 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    src: url(../fonts/Righteous-Regular.ttf);
+    font-family: righteous
+}
+
+@font-face {
+    src: url(../fonts/Karantina-Regular.ttf);
+    font-family: karantina
+}
+
+@font-face {
+    src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+    font-family: monserat
+}
+
+html, body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+    position: relative;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{
+    background: #161616;
+    background-position: center;
+    background-size: cover;
+}
+
+header{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    background: #000;
+    box-shadow: 0px 2px 15px #000000;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 100px;
+    margin: auto;
+    transition: 0.5s;
+}
+
+header.sticky{
+    background: #000;
+    box-shadow: 0px 2px 15px #000000;
+}
+
+header .logo{
+    height: 75px;
+    width: 350px;
+    display: flex;
+}
+
+header .vexento{
+    color: white;
+    font-family: 'Righteous', cursive;
+    font-size: 30px;
+    padding-top: 17px;
+    text-decoration: none;
+    cursor: default;
+}
+
+header .menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .menu .text-menu{
+    font-size: 16px;
+    text-decoration: none;
+    margin: 0 10px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    transition: 0.2s;
+}
+
+header .menu .text-menu:hover{
+    color: #ffffff94;
+    transition: 0.2s;
+}
+
+header .menu .sosmed-menu{
+    display: flex;
+}
+
+.menu .social-media{
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+}
+
+header .menu .social-media .ig{
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.menu .ig .instagram{
+    padding-left: 8px;
+    padding-top: 7px;
+    transition: 0.2s;
+}
+
+.menu .ig .instagram:hover{
+    color: #24242494;
+    transition: 0.2s;
+}
+
+header .menu .social-media .twt{
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.menu .twt .twitter{
+    padding-left: 7px;
+    padding-top: 7px;
+    transition: 0.2s;
+}
+
+.menu .twt .twitter:hover{
+    color: #24242494;
+    transition: 0.2s;
+}
+
+header .menu .social-media .dc{
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.menu .dc .discord{
+    padding-left: 5px;
+    padding-top: 7px;
+    transition: 0.2s;
+}
+
+.menu .dc .discord:hover{
+    color: #24242494;
+    transition: 0.2s;
+}
+
+header .btn{
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+header .menu .img-menu{
+    display: none;
+    width: 70px;
+}
+
+header .menu h1{
+    display: none;
+}
+
+/*Discord Home*/
+.direct{
+    width: 100%;
+    height: 765px;
+    background: url('../images/bg-discord.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.main-direct{
+    width: 1300px;
+    height: auto;
+    margin: auto;
+}
+
+.main-direct .content{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1260px;
+    padding-top: 160px;
+    margin: auto;
+}
+
+.text-content .title{
+    font-family: righteous;
+    font-size: 50px;
+    color: #fff;
+    width: 500px;
+    letter-spacing: 1px;
+    padding-top: 90px;
+}
+
+.text-content .btn-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 400px;
+    height: 80px;
+    margin-top: 50px;
+}
+
+.btn-div .btn-direct{
+    width: 170px;
+    height: 57px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    color: #fff;
+    background: #B026FF;
+    border: none;
+    box-shadow: 0px 0px 10px #B026FF;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.btn-div .btn-direct:hover{
+    box-shadow: 0px 0px 20px #B026FF;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.content .direct-frame1{
+    width: 800px;
+    height: 500px;
+    box-shadow: 0px 0px 20px #000000;
+}
+
+/*Footer*/
+.ftr{
+    width: 100%;
+    height: 250px;
+    background: #0e0e0e;
+}
+
+.ftr .main-ftr{
+    width: 1300px;
+    height: auto;
+    margin: auto;
+}
+
+.main-ftr .row-ftr{
+    display: flex;
+    padding-top: 40px;
+}
+
+.row-ftr .nft-project{
+    display: flex;
+    flex-direction: column;
+}
+
+.nft-project .logo-ftr{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.nft-project .logo-ftr img{
+    width: 70px;
+}
+
+.nft-project .logo-ftr h1{
+    font-size: 30px;
+    color: #fff;
+    font-family: righteous;
+    padding-top: 17px;
+}
+
+.nft-project .text-ftr{
+    color: #9F9F9F;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    padding-left: 20px;
+    line-height: 20px;
+}
+
+.nft-project .text-ftr a{
+    text-decoration: none;
+    color: #E9E9E9;
+    transition: 0.3s;
+}
+
+.nft-project .text-ftr a:hover{
+    color: #757575;
+    transition: 0.3s;
+}
+
+.links-ftr{
+    display: flex;
+    margin-left: auto;
+}
+
+.row-ftr .explore{
+    flex-direction: column;
+    display: flex;
+    margin-top: 25px;
+}
+
+.explore .ex-title, .follow .fo-title{
+    color: #fff;
+    font-size: 20px;
+    font-family: monserat;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.explore a, .follow a{
+    text-decoration: none;
+    color: #9F9F9F;
+    font-family: monserat;
+    font-weight: bold;
+    line-height: 24px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.explore a:hover, .follow a:hover{
+    color: #c2c2c2;
+    transition: 0.3s;
+}
+
+.row-ftr .follow{
+    flex-direction: column;
+    display: flex;
+    margin-top: 25px;
+    margin-left: 100px;
+}
+
+@media (max-width: 1296px){
+    /*Discord*/
+    .main-direct{
+        width: 1050px;
+    }
+
+    /*Footer*/
+    .ftr .main-ftr{
+        width: 1050px;
+    }
+}
+
+
+@media (max-width: 1060px){
+    header .btn{
+        display: block;
+    }
+
+    header .menu{
+        position: fixed;
+        background: #6057af;
+        flex-direction: column;
+        min-width: 390px;
+        height: 100vh;
+        top: 0;
+        right: -200%;
+        padding: 80px 50px;
+        transition: 0.5s;
+        transition-property: right;
+    }
+    
+    header .menu.active{
+        right: 0;
+    }
+
+    header .menu .close-btn{
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 25px;
+    }
+
+    header .menu .img-menu{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 40px;
+        margin-top: 5px;
+    }
+
+    header .menu h1{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 104px;
+        padding-top: 17px;
+        font-family: 'Righteous', cursive;
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+    }
+
+    header .menu .text-menu{
+        display: block;
+        font-size: 26px;
+        margin: 20px;
+        padding: 0 15px;
+        border-radius: 10px;
+    }
+
+    header .menu .text-menu:hover{
+        background: #ffffff;
+        color: #000;
+        border-radius: 10px;
+    }
+
+    header .menu .sosmed-menu{
+        margin-top: 20px;
+    }
+
+    header .menu .twt, .dc{
+        margin-left: 6px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-direct{
+        width: 790px;
+    }
+
+    .text-content .title{
+        font-size: 45px;
+        width: 405px;
+        padding-top: 120px;
+    }
+
+    .text-content .btn-div{
+        width: 350px;
+    }
+
+    .btn-div .btn-direct{
+        width: 150px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .content .direct-frame1{
+        margin-left: 20px;
+    }
+
+     /*Footer*/
+     .ftr .main-ftr{
+        width: 790px;
+    }
+}
+
+@media (max-width: 776px){
+    header{
+        padding: 3px 50px;
+    }
+
+    header .vexento{
+        display: none;
+    }
+
+    /*Discord*/
+    .direct{
+        height: 960px;
+    }
+
+    .main-direct{
+        width: 490px;
+    }
+
+    .main-direct .content{
+        display: block;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .text-content .title{
+        font-size: 45px;
+        width: 490px;
+        padding-top: 120px;
+        text-align: center;
+    }
+
+    .text-content .btn-div{
+        width: 390px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .btn-div .btn-direct{
+        width: 150px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .content .direct-frame1{
+        margin-left: 20px;
+        width: 490px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+
+    /*Footer*/
+    .ftr{
+        height: 420px;
+    }
+
+    .ftr .main-ftr{
+        width: 490px;
+    }
+
+    .main-ftr .row-ftr{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row-ftr .nft-project{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .links-ftr{
+        display: flex;
+        margin: auto;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 476px){
+    /*Discord*/
+    .direct{
+        height: 960px;
+    }
+
+    .main-direct{
+        width: 350px;
+    }
+
+    .main-direct .content{
+        display: block;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .text-content .title{
+        font-size: 35px;
+        width: 350px;
+        padding-top: 120px;
+        text-align: center;
+    }
+
+    .text-content .btn-div{
+        width: 290px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .btn-div .btn-direct{
+        width: 120px;
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .content .direct-frame1{
+        margin-left: 20px;
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+
+    .ftr .main-ftr{
+        width: 350px;
+    }
+}
